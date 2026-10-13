@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var progress: Int = 0
+    @AppStorage("progress") private var progress: Int = 0
 
     var body: some View {
         VStack(spacing: 20) {
@@ -21,6 +21,11 @@ struct ContentView: View {
             .accessibilityIdentifier("completeButton")
         }
         .padding()
+        .onAppear {
+            if ProcessInfo.processInfo.arguments.contains("-resetProgress") {
+                progress = 0
+            }
+        }
     }
 }
 
