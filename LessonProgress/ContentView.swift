@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var progress: Int = 0
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Text("Progress: \(progress)")
+                .accessibilityIdentifier("progressLabel")
+
+            Button("Complete step") {
+                progress += 1
+            }
+            .accessibilityIdentifier("completeButton")
         }
         .padding()
     }

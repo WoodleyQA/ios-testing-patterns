@@ -40,4 +40,39 @@ final class LessonProgressUITests: XCTestCase {
             }
         }
     }
+
+    @MainActor
+    func testBackgroundResume() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-resetProgress"]
+        app.launch()
+
+        let completeButton = app.buttons["completeButton"]
+        for _ in 0..<3 {
+            completeButton.tap()
+        }
+
+        XCUIDevice.shared.press(.home)
+        app.activate()
+
+        XCTAssertEqual(app.staticTexts["progressLabel"].label, "Progress: 3")
+    }
+
+    @MainActor
+    func testTerminateResume() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-resetProgress"]
+        app.launch()
+
+        let completeButton = app.buttons["completeButton"]
+        for _ in 0..<3 {
+            completeButton.tap()
+        }
+
+        app.terminate()
+        app.launchArguments = []
+        app.launch()
+
+        XCTAssertEqual(app.staticTexts["progressLabel"].label, "Progress: 3")
+    }
 }
