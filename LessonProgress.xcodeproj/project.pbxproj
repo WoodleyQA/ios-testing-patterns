@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		CEE995DF307DDDC900262854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEE995C6307DDDC700262854 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEE995CD307DDDC700262854;
-			remoteInfo = LessonProgress;
-		};
 		CEE995E9307DDDC900262854 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEE995C6307DDDC700262854 /* Project object */;
@@ -25,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		CEE995CE307DDDC700262854 /* LessonProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEE995DE307DDDC900262854 /* LessonProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LessonProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE995E8307DDDC900262854 /* LessonProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LessonProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -33,11 +25,6 @@
 		CEE995D0307DDDC700262854 /* LessonProgress */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = LessonProgress;
-			sourceTree = "<group>";
-		};
-		CEE995E1307DDDC900262854 /* LessonProgressTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LessonProgressTests;
 			sourceTree = "<group>";
 		};
 		CEE995EB307DDDC900262854 /* LessonProgressUITests */ = {
@@ -49,13 +36,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEE995CB307DDDC700262854 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEE995DB307DDDC900262854 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				CEE995D0307DDDC700262854 /* LessonProgress */,
-				CEE995E1307DDDC900262854 /* LessonProgressTests */,
 				CEE995EB307DDDC900262854 /* LessonProgressUITests */,
 				CEE995CF307DDDC700262854 /* Products */,
 			);
@@ -86,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				CEE995CE307DDDC700262854 /* LessonProgress.app */,
-				CEE995DE307DDDC900262854 /* LessonProgressTests.xctest */,
 				CEE995E8307DDDC900262854 /* LessonProgressUITests.xctest */,
 			);
 			name = Products;
@@ -116,29 +94,6 @@
 			productName = LessonProgress;
 			productReference = CEE995CE307DDDC700262854 /* LessonProgress.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CEE995DD307DDDC900262854 /* LessonProgressTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEE995F5307DDDC900262854 /* Build configuration list for PBXNativeTarget "LessonProgressTests" */;
-			buildPhases = (
-				CEE995DA307DDDC900262854 /* Sources */,
-				CEE995DB307DDDC900262854 /* Frameworks */,
-				CEE995DC307DDDC900262854 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEE995E0307DDDC900262854 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CEE995E1307DDDC900262854 /* LessonProgressTests */,
-			);
-			name = LessonProgressTests;
-			packageProductDependencies = (
-			);
-			productName = LessonProgressTests;
-			productReference = CEE995DE307DDDC900262854 /* LessonProgressTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CEE995E7307DDDC900262854 /* LessonProgressUITests */ = {
 			isa = PBXNativeTarget;
@@ -176,10 +131,6 @@
 					CEE995CD307DDDC700262854 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					CEE995DD307DDDC900262854 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = CEE995CD307DDDC700262854;
-					};
 					CEE995E7307DDDC900262854 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = CEE995CD307DDDC700262854;
@@ -201,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				CEE995CD307DDDC700262854 /* LessonProgress */,
-				CEE995DD307DDDC900262854 /* LessonProgressTests */,
 				CEE995E7307DDDC900262854 /* LessonProgressUITests */,
 			);
 		};
@@ -209,13 +159,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		CEE995CC307DDDC700262854 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEE995DC307DDDC900262854 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,13 +182,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEE995DA307DDDC900262854 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CEE995E4307DDDC900262854 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,11 +192,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CEE995E0307DDDC900262854 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEE995CD307DDDC700262854 /* LessonProgress */;
-			targetProxy = CEE995DF307DDDC900262854 /* PBXContainerItemProxy */;
-		};
 		CEE995EA307DDDC900262854 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEE995CD307DDDC700262854 /* LessonProgress */;
@@ -408,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.LessonProgress;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodleyqa.LessonProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -436,47 +367,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.LessonProgress;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodleyqa.LessonProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CEE995F6307DDDC900262854 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.LessonProgressTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LessonProgress.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LessonProgress";
-			};
-			name = Debug;
-		};
-		CEE995F7307DDDC900262854 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.LessonProgressTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LessonProgress.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LessonProgress";
 			};
 			name = Release;
 		};
@@ -487,7 +382,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.LessonProgressUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodleyqa.LessonProgressUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -503,7 +398,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.LessonProgressUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodleyqa.LessonProgressUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -529,15 +424,6 @@
 			buildConfigurations = (
 				CEE995F3307DDDC900262854 /* Debug */,
 				CEE995F4307DDDC900262854 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEE995F5307DDDC900262854 /* Build configuration list for PBXNativeTarget "LessonProgressTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEE995F6307DDDC900262854 /* Debug */,
-				CEE995F7307DDDC900262854 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

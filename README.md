@@ -18,3 +18,11 @@ xcodebuild test \
 ```
 
 Swap `iPhone 16` for any simulator you have installed; list the available options with `xcrun simctl list devices available`.
+
+## Rules of thumb
+
+**Memory.** State held only in memory, such as a plain `@State` property, survives backgrounding because the process keeps running, but it does not survive termination. A test that only backgrounds and resumes an app cannot tell memory-only state apart from persisted state. Always include a terminate and relaunch step if you want to claim data is saved.
+
+**Disk.** State written to disk, such as `@AppStorage`, a file, or a local database, survives both backgrounding and termination because it is read back from storage on the next launch. This is the minimum bar for anything the user would expect to still be there after the app restarts or the OS kills it in the background.
+
+**Server.** State that only lives on a server is not available until the app can reach that server again. A test that terminates the app and relaunches it while offline, or before the sync call completes, can expose gaps that a disk-only test would miss. If correctness depends on a round trip to a server, test that round trip directly rather than assuming local persistence covers it.
